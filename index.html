@@ -32,7 +32,6 @@
             -webkit-text-size-adjust: 100%;
         }
 
-        /* Container e Layout Dinâmico */
         .container {
             max-width: 1200px;
             margin: 0 auto;
@@ -47,7 +46,7 @@
         }
 
         header h1 {
-            font-size: calc(2rem + 1.5vw); /* Tipografia fluida com base na largura da viewport */
+            font-size: calc(2rem + 1.5vw);
             color: var(--text-title);
             font-weight: 800;
             letter-spacing: -1px;
@@ -65,7 +64,6 @@
             padding: 0 10px;
         }
 
-        /* Seções de Conteúdo */
         section {
             margin-bottom: 50px;
         }
@@ -87,13 +85,12 @@
             color: #b4c2d3;
         }
 
-        /* Tabela Comparativa com Rolagem Horizontal Touch para Telas Pequenas */
         .table-container {
             overflow-x: auto;
             margin: 30px 0;
             border-radius: 6px;
             border: 1px solid var(--border);
-            -webkit-overflow-scrolling: touch; /* Suavidade no iOS */
+            -webkit-overflow-scrolling: touch;
         }
 
         table {
@@ -101,7 +98,7 @@
             border-collapse: collapse;
             background-color: var(--bg-card);
             text-align: left;
-            min-width: 600px; /* Evita que o conteúdo da tabela fique espremido e ilegível */
+            min-width: 600px;
         }
 
         th, td {
@@ -123,7 +120,6 @@
             border-bottom: none;
         }
 
-        /* Grid Inteligente (6 Princípios) */
         .principles-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -167,7 +163,7 @@
 
         .principle-card ul {
             list-style: none;
-            margin-top: auto; /* Alinha perfeitamente as listas mesmo com textos de tamanhos diferentes */
+            margin-top: auto;
             padding-top: 15px;
         }
 
@@ -192,7 +188,6 @@
             top: 1px;
         }
 
-        /* Bloco EDM Adaptável */
         .edm-box {
             background-color: var(--bg-card);
             border: 1px solid var(--border);
@@ -226,7 +221,6 @@
             margin-bottom: 0;
         }
 
-        /* Rodapé */
         footer {
             text-align: center;
             padding: 35px 0 10px 0;
@@ -236,9 +230,6 @@
             margin-top: 50px;
         }
 
-        /* ==========================================================================
-           MEDIA QUERIES - Ajustes finos para Mobile e Tablets
-           ========================================================================== */
         @media (max-width: 768px) {
             .container {
                 padding: 25px 15px;
@@ -250,7 +241,7 @@
             }
 
             .principles-grid {
-                grid-template-columns: 1fr; /* Força uma coluna única no celular para leitura linear confortável */
+                grid-template-columns: 1fr;
                 gap: 15px;
             }
 
@@ -259,7 +250,7 @@
             }
 
             .edm-steps {
-                grid-template-columns: 1fr; /* Coluna única para os passos do EDM em telas touch */
+                grid-template-columns: 1fr;
                 gap: 15px;
             }
             
